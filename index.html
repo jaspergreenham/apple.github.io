@@ -64,11 +64,11 @@
     	display:block;
       color:white;
     	width: 1px;
-    	height: 74px;
+    	height: 70px;
     	background-color: white;
     	position:absolute;
-    	left: 955px;
-    	top: 171px;
+    	left: 933px;
+    	top: 145px;
     	-moz-animation: 1s step-end blink infinite;
       -ms-animation: 1s step-end blink infinite;
       -o-animation: 1s step-end blink infinite;
@@ -198,6 +198,10 @@
               position:block;
             }
 
+            .blinking-cursor {
+              height:3em;
+            }
+
       @-webkit-keyframes blink {
         0% { opacity: 0;}
         50% { opacity: 1; }
@@ -248,23 +252,7 @@
     	color: map-get($colors, 'unicorn8');
     }
 </style>
-    <link rel="stylesheet" href="file:///Users/Julian/Documents/Event%20Countdown%20Page/WWDC%202016/normalize.css">
-<!--<div class="fullscreen-bg">
-    <video loop autoplay class="fullscreen-bg__video" id="herovideo">
-        <source src="file:///Users/Julian/Documents/Event%20Countdown%20Page/Apple40YearsCelebration/hero_video_large_2x.mp4" type="video/mp4">
-    </video>
-</div>-->
-<!--[if lt IE 9]>
-<script>
-	document.createElement('video');
-</script>
-<![endif]-->
-<!--<center><button id="vidpause">Pause</button><button id="vidmute">Unmute</button></center>-->
-<!--<video muted autoplay loop id="bgvid">
-    <source src="file:///Users/Julian/Documents/Event%20Countdown%20Page/Apple40YearsCelebration/hero_video_large_2x.mp4" type="video/mp4">
-</video>-->
-<!--<a id="mutebutton" style="text-align:left;" class="button-example-1 button-example-red" href="javascript:enableMute()">Mute / Unmute Sound</a><br /><a style="text-align:right;" id="pausebutton" class="button-example-1 button-example-red" href="javascript:enablepause()">Play / Pause Video</a>
---></head>
+</head>
 
 <body id="main" class="base-swag">
     <div class="maincontentarea">
@@ -272,8 +260,10 @@
   <div class="wwdc__marketingfoobar">
   <!--  <div class="space"></div><span style="font-size:30px">W</span><span style="font-size:10px"> </span><span style="font-size:30px"class="unicorn6">W</span><span style="font-size:10px"> </span><span style="font-size:30px" class="unicorn5">D</span><span style="font-size:10px"> </span><span style="font-size:30px"class="unicorn3">C</span><span style="font-size:10px"> </span><span class="unicorn2" style="font-size:30px">1</span><span style="font-size:10px"> </span><span class="unicorn2" style="font-size:30px">6</span><span style="font-size:10px"> </span>--><!--<span style="font-size:30px;color:white;"></span>--><div class="cursor"></div>
 <br><br><br><br>
-<center><div class="2apple2" style="color:white;font-size:70px;display:inline-block;">Hello, </div><div class="space"></div><div class="space"></div><div class="space"></div><div class="space"></div><div style="font-size:74px;display:inline-block;">W</div><div class="space"></div><div class="space"></div><div class="space"></div><div class="unicorn6" style="font-size:74px;display:inline-block;">W</div><div class="space"></div><div class="space"></div><div class="space"></div><div class="unicorn5" style="font-size:74px;display:inline-block;">D</div><div class="space"></div><div class="space"></div><div class="space"></div><div class="unicorn3" style="font-size:74px;display:inline-block;">C</div><div class="space"></div><div class="space"></div><div class="space"></div><div class="unicorn2" style="font-size:74px;display:inline-block;">1</div><div class="space"></div><div class="space"></div><div class="space"></div><div class="unicorn2" style="font-size:74px;display:inline-block;">6</div><div class="space"></div><div class="space"></div><div class="2apple2" style="color:white;font-size:79px;display:inline-block;">.</div></center>
-<br><br><br><center><div class="space"></div><span class="unicorn2" style="font-size:30px;">print</span><span class="unicorn7" style="font-size:30px;">(</span><span class="unicorn3" style="font-size:30px;">"Watch Live"</span><span class="unicorn7" style="font-size:30px;">)</span><br>
+<center><a class="unicorn7-link" href="http://developer.apple.com/wwdc/live"><img class="unicorn7-link" style="width:699px" src="/hero_large_2x.png"></img><!--<img class="blinking-cursor" src="file:///Users/Julian/Documents/Event%20Countdown%20Page/WWDC%202016%20Final/cursor_large.gif"></img>--></a><!--<div class="2apple2" style="color:white;font-size:70px;display:inline-block;">Hello, </div><div class="space"></div><div class="space"></div><div class="space"></div><div class="space"></div><div style="font-size:74px;display:inline-block;">W</div><div class="space"></div><div class="space"></div><div class="space"></div><div class="unicorn6" style="font-size:74px;display:inline-block;">W</div><div class="space"></div><div class="space"></div><div class="space"></div><div class="unicorn5" style="font-size:74px;display:inline-block;">D</div><div class="space"></div><div class="space"></div><div class="space"></div><div class="unicorn3" style="font-size:74px;display:inline-block;">C</div><div class="space"></div><div class="space"></div><div class="space"></div><div class="unicorn2" style="font-size:74px;display:inline-block;">1</div><div class="space"></div><div class="space"></div><div class="space"></div><div class="unicorn2" style="font-size:74px;display:inline-block;">6</div><div class="space"></div><div class="space"></div><div class="2apple2" style="color:white;font-size:79px;display:inline-block;">.</div>--></center>
+<br><br><br><br><center><!--<span class="unicorn2" style="font-size:30px;">print</span><span class="unicorn7" style="font-size:30px;">(</span><span class="unicorn3" style="font-size:30px;">"Watch Live"</span><span class="unicorn7" style="font-size:30px;">)</span>--><p>
+  /* Join us here on June 13 at 10 a.m. PDT<br>
+  to watch the WWDC keynote live. */</p>
 <!--<div class="space"></div><span class="unicorn6">let </span><span class="unicorn7">keynoteDate = </span><span class="unicorn5">"June 13, 2016 10:00 PDT"</span><br>-->
 <div class="at-countdown" id="at-countdown">
 <!--   <h1 style="font-size:3.08em">WWDC 16</h1><h1 style="font-size:1em">Names matter.</h1>--><!--<img src="wwdc16-logo_2x.png"></img><br /><br />--><!--<h1 style="font-size:0.8em">Press any of the above buttons to either mute or pause the video.</h1>--><!--<h1 class="headline">Let us loop you in.</h1>-->
