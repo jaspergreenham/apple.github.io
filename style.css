@@ -1,0 +1,246 @@
+.unicorn1{
+  color:#52bc57;
+}
+
+a.add-to-cal{
+  color: #c4c7d0;
+  padding: 6px;
+  border: solid 1px #96989f;
+  border-radius: 4px;
+  padding-left: 15px;
+  padding-right: 15px;
+  text-decoration: none;
+}
+
+.join-slack{
+  color: #c4c7d0;
+  font-size: 14px;
+}
+
+.unicorn2{
+  color:#00aba4;
+}
+
+.unicorn3{
+  color:#dc3b3b;
+}
+
+.unicorn4 {
+  color:#8884c5;
+}
+
+.unicorn5{
+  color:#d28e5d;
+}
+
+.unicorn6{
+  color:#b73999;
+}
+
+.unicorn7 {
+  color: #fff;
+}
+
+.unicorn7-link {
+  color:white;
+  cursor:pointer;
+  max-width: 100%;
+
+
+}
+.unicorn7-link:hover {color:#dedede;cursor:pointer;}
+
+.cursor {
+  content: '';
+  display:block;
+  color:white;
+  width: 1px;
+  height: 70px;
+  background-color: white;
+  position:absolute;
+  left: 933px;
+  top: 145px;
+  -moz-animation: 1s step-end blink infinite;
+  -ms-animation: 1s step-end blink infinite;
+  -o-animation: 1s step-end blink infinite;
+  animation: 1s step-end blink infinite;
+}
+
+.apple {
+  display:block;
+  color:white;
+  width: 1px;
+  height: 1px;
+  background-color: white;
+  position:absolute;
+  left: 157px;
+  top: -6px;
+  /*  -moz-animation: 1s step-end blink infinite;
+  -ms-animation: 1s step-end blink infinite;
+  -o-animation: 1s step-end blink infinite;
+  animation: 1s step-end blink infinite;*/
+}
+
+.wsign {
+  display:block;
+  /*color:white;*/
+  width: 1px;
+  height: 1px;
+  background-color: white;
+  position:absolute;
+  left: 2px;
+  top: -1px;
+  /*  -moz-animation: 1s step-end blink infinite;
+  -ms-animation: 1s step-end blink infinite;
+  -o-animation: 1s step-end blink infinite;
+  animation: 1s step-end blink infinite;*/
+}
+.wsign2 {
+  display:block;
+  color:#b73999;
+  width: 1px;
+  height: 1px;
+  background-color: white;
+  position:absolute;
+  left: 28px;
+  top: -1px;
+  /*  -moz-animation: 1s step-end blink infinite;
+  -ms-animation: 1s step-end blink infinite;
+  -o-animation: 1s step-end blink infinite;
+  animation: 1s step-end blink infinite;*/
+}
+.dsign {
+  display:block;
+  color:#d28e5d;
+  width: 1px;
+  height: 1px;
+  background-color: white;
+  position:absolute;
+  left: 54px;
+  top: -1px;
+  /*  -moz-animation: 1s step-end blink infinite;
+  -ms-animation: 1s step-end blink infinite;
+  -o-animation: 1s step-end blink infinite;
+  animation: 1s step-end blink infinite;*/
+}
+.csign {
+  display:block;
+  color:#dc3b3b;
+  width: 1px;
+  height: 1px;
+  background-color: white;
+  position:absolute;
+  left: 80px;
+  top: -1px;
+  /*  -moz-animation: 1s step-end blink infinite;
+  -ms-animation: 1s step-end blink infinite;
+  -o-animation: 1s step-end blink infinite;
+  animation: 1s step-end blink infinite;*/
+}
+.onesign {
+  display:block;
+  color:#00aba4;
+  width: 1px;
+  height: 1px;
+  background-color: white;
+  position:absolute;
+  left: 106px;
+  top: -1px;
+  /*  -moz-animation: 1s step-end blink infinite;
+  -ms-animation: 1s step-end blink infinite;
+  -o-animation: 1s step-end blink infinite;
+  animation: 1s step-end blink infinite;*/
+}
+.sixsign {
+  display:block;
+  color:#00aba4;
+  width: 1px;
+  height: 1px;
+  background-color: white;
+  position:absolute;
+  left: 132px;
+  top: -1px;
+  /*  -moz-animation: 1s step-end blink infinite;
+  -ms-animation: 1s step-end blink infinite;
+  -o-animation: 1s step-end blink infinite;
+  animation: 1s step-end blink infinite;*/
+}
+
+.space {
+  content: '';
+  display:inline-block;
+  color:#292c36;
+  width: 2px;
+  height: 1px;
+  opacity:0;
+  background-color: white;
+  position:inline-block;
+}
+
+.topspace {
+  content: '';
+  display:block;
+  color:#292c36;
+  width: 0px;
+  height: 0px;
+  margin-top:0.3em;
+  opacity:0;
+  background-color: white;
+  position:block;
+}
+
+.blinking-cursor {
+  height:3em;
+}
+
+@-webkit-keyframes blink {
+  0% { opacity: 0;}
+  50% { opacity: 1; }
+  100% { opacity: 0; }
+}
+
+@-moz-keyframes blink {
+  0% { opacity: 0;}
+  50% { opacity: 1; }
+  100% { opacity: 0; }
+}
+
+@-ms-keyframes blink {
+  0% { opacity: 0;}
+  50% { opacity: 1; }
+  100% { opacity: 0; }
+}
+
+@-o-keyframes blink {
+  0% { opacity: 0;}
+  50% { opacity: 1; }
+  100% { opacity: 0; }
+}
+
+@keyframes blink {
+  0% { opacity: 0;}
+  50% { opacity: 1; }
+  100% { opacity: 0; }
+}
+
+
+.unicorn8{color: #94c66e}
+
+body {
+  background-color: #292c36;
+  color: #52bc57;
+  /*margin: 2em 22px;*/
+  font-family: 'Roboto Mono', monospace;
+  font-size: 23px;
+  line-height: 1.6;
+
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+
+
+.wwdc__marketingfoobar {
+  /*	margin-bottom: 80px;*/
+  color: map-get($colors, 'unicorn8');
+}
