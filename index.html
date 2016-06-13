@@ -119,9 +119,56 @@
 
 
       </div>
+      
+      <script>
+        $(document).ready(function () {Â Â Â Â 
 
-      <script src="http://jaspergreenham.github.io/jquery-1.11.2.min.js"></script>
-      <script src="http://jaspergreenham.github.io/jquery.appletimer.js"></script>
+  $('.at-countdown').appleTimer({
+    minute: 55,
+    //Change date here!
+    hour: 9,
+    day: 13,
+    month: 6,
+    year: 2016,
+    pluralLabels: true
+  });
+
+  var tDays = $(".at-days-digit").text();Â Â Â Â 
+  var tHours = $(".at-hours-digit").text();Â Â Â Â 
+  var tMinutes = $(".at-minutes-digit").text();Â Â Â Â 
+  var tSeconds = $(".at-seconds-digit").text();
+
+
+  nDays = parseInt(tDays);Â Â Â Â 
+  nHours = parseInt(tHours);Â Â Â Â 
+  nMinutes = parseInt(tMinutes);Â Â Â Â 
+  nSeconds = parseInt(tSeconds);
+
+  setInterval(function(){
+
+    var tDays = $(".at-days-digit").text();Â Â Â Â 
+    var tHours = $(".at-hours-digit").text();
+    var tMinutes = $(".at-minutes-digit").text();Â Â 
+    var tSeconds = $(".at-seconds-digit").text();
+
+    var nDays = parseInt(tDays);Â Â Â Â 
+    var nHours = parseInt(tHours);Â Â Â Â 
+    var nMinutes = parseInt(tMinutes);Â Â Â Â 
+    var nSeconds = parseInt(tSeconds);Â 
+
+    if (nDays== 0 && nHours==0 && nMinutes == 0 && nSeconds == 0 ){
+      var win = window.open('http://www.apple.com/apple-events/june-2016/', '_blank');
+      win.focus();
+    }
+
+  }, 60000);
+
+
+});
+      </script>
+
+      <script src="/jquery-1.11.2.min.js"></script>
+      <script src="/jquery.appletimer.js"></script>
 
       <!-- Init Countdown plugin -->
 
