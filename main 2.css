@@ -1,0 +1,602 @@
+html,button,input,select,textarea {
+	color:#FFF
+}
+
+@font-face {
+	font-family:'Myriad';
+	font-style:normal;
+	font-weight:100;
+	src:url(file:///Users/Julian/Documents/Event%20Countdown%20Page/Apple40YearsCelebration/myriad.ttf) format("truetype")
+	/* Copyright (c) 1992 Adobe Systems Incorporated. All Rights Reserved. Myriad is a trademark of Adobe Systems Incorporated. */
+}
+
+@font-face {
+	font-family:'Myriad Set Pro';
+	font-style:normal;
+	font-weight:200;
+	src:url(file:///Users/Julian/Documents/Event%20Countdown%20Page/Apple40YearsCelebration/sfns.ttf) format("truetype")
+	/* Copyright (c) 1992 Adobe Systems Incorporated. All Rights Reserved. Myriad is a trademark of Adobe Systems Incorporated. */
+}
+
+html {
+	font-size:1em;
+	line-height:100em;
+}
+
+video#bgvid {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    min-width: 8%;
+    min-height: 8%;
+    width: auto;
+    height: auto;
+    z-index: -100;
+    -ms-transform: translateX(-50%) translateY(-50%);
+    -moz-transform: translateX(-50%) translateY(-50%);
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+    /*background: url(polina.jpg) no-repeat;*/
+    background-size: cover;
+}
+
+body {
+    line-height: 1.6em;
+/*  background:#fff;*/
+	background-repeat:no-repeat;
+	background-position:fixed;
+	/*background-image:linear-gradient(50%,#000,#060709,#212328,#424448,#686a6d);*/
+	background-image: url("file:///Users/Julian/Downloads/jaspergreenham.github.io/helloagain.png");
+	/*background-attachment:fixed;*/
+	/*background:-webkit-linear-gradient(#000,#060709,#212328,#424448,#686a6d);
+	background:-o-linear-gradient(#000,#060709,#212328,#424448,#686a6d);
+	background:-moz-linear-gradient(#000,#060709,#212328,#424448,#686a6d);
+	background:linear-gradient(#000,#060709,#212328,#424448,#686a6d);*/
+	background-size: center;
+	width:8oopx;
+height:100%;
+	/*color:#FFF;*/
+	font-family:'Myriad Set Pro','Helvetica','Arial',sans-serif;
+	font-weight:200;
+	font-size:25px;
+	margin:0
+}
+
+#marginmaker {
+  padding: .4rem;
+  margin: 1rem auto;
+
+}
+
+#vidpause {
+display:inline-block;
+  width: 30%;
+  padding: .4rem;
+  border: none;
+  margin-left: 1rem;
+  font-size: 1.3rem;
+  background: rgba(0,0,0,0.23);
+  color: rgba(0,0,0,0.5);
+  border-radius: 3px;
+  cursor: pointer;
+  transition: .3s background;
+}
+#vidpause:hover {
+   background: rgba(0,0,0,0.5);
+}
+
+#vidmute {
+display:inline-block;
+  width: 30%;
+  padding: .4rem;
+  border: none;
+	  margin-left: 1rem;
+  margin: 1rem auto;
+  font-size: 1.3rem;
+  background: rgba(0,0,0,0.23);
+  color: rgba(0,0,0,0.5);
+  border-radius: 3px;
+  cursor: pointer;
+  transition: .3s background;
+}
+#vidmute:hover {
+   background: rgba(0,0,0,0.5);
+}
+
+@media screen and (max-device-width: 800px) {
+    html {
+         background: url(polina.jpg) #000 no-repeat center center fixed;
+    }
+    #bgvid {
+        display: none;
+    }
+}
+
+video#bgvid {
+    transition: 1s opacity;
+}
+.stopfade { opacity: .5; }
+
+video { display: block; }
+
+h1 {
+	font-size:600px;
+	font-family:'Myriad Set Pro','Helvetica','Arial',sans-serif;
+	font-weight:200;
+	transition:all .2s linear;
+	/*-webkit-transition: all 0.2s linear;*/
+	text-decoration:none;
+	margin-bottom:30px;
+		padding-top:0.1em;
+	color:#000;
+}
+
+h2 {
+	font-size:25px;
+	font-family:'Myriad Set Pro','Helvetica','Arial',sans-serif;
+	font-weight:200;
+	transition:all .2s linear;
+    line-height: 1.3em;
+	/*-webkit-transition: all 0.2s linear;*/
+}
+
+#preordertitle {
+	font-size:30px;
+	font-family:'Myriad Set Pro','Helvetica','Arial',sans-serif;
+	font-weight:200;
+	transition:all .2s linear
+	/*-webkit-transition: all 0.2s linear;*/
+}
+
+h3 {
+	font-size:50px;
+	font-family:'Myriad Set Pro','Helvetica','Arial',sans-serif;
+	font-weight:200;
+	transition:all .2s linear;
+	/*-webkit-transition: all 0.2s linear;*/
+	text-decoration:none;
+	margin-top:auto
+}
+
+h4 {
+	font-size:100px;
+	font-family:'Myriad Set Pro','Helvetica','Arial',sans-serif;
+	font-weight:200;
+	transition:all .2s linear;
+	/*-webkit-transition: all 0.2s linear;*/
+	text-decoration:none;
+	margin-bottom:0;
+	margin-top:40px
+}
+h5 {
+	font-size:30px;
+	font-family:'Myriad Set Pro','Helvetica','Arial',sans-serif;
+	font-weight:200;
+	transition:all .2s linear;
+	/*-webkit-transition: all 0.2s linear;*/
+	text-decoration:none;
+	margin-top:5px;
+	margin-bottom:25px;
+	color:#e3e3e3
+}
+h6 {
+	font-size:20px;
+	font-family:'Myriad Set Pro','Helvetica','Arial',sans-serif;
+	font-weight:200;
+	transition:all .2s linear;
+	/*-webkit-transition: all 0.2s linear;*/
+	text-decoration:none;
+	margin-top:5px;
+	margin-bottom:0;
+	color:#b2b2b2
+}
+
+.logo {
+    background:url(/img/logo.svg)
+}
+
+::-moz-selection {
+	background:#b3d4fc;
+	text-shadow:none
+}
+
+::selection {
+	background:#b3d4fc;
+	text-shadow:none
+}
+
+
+hr {
+	display:block;
+	height:1px;
+	border:0;
+	border-top:1px solid #ccc;
+	margin:1em 0;
+	padding:0
+}
+
+
+audio,canvas,img,video {
+	vertical-align:middle
+}
+
+#img.source-image {
+	width:100%;
+	position:absolute;
+	top:0;
+	left:0
+}
+
+/*
+* Remove default fieldset styles.
+*/
+fieldset {
+	border:0;
+	margin:0;
+	padding:0
+}
+
+/*
+* Allow only vertical resizing of textareas.
+*/
+textarea {
+	resize:vertical
+}
+
+/*
+* Clearfix: contain floats
+*
+* For modern browsers
+* 1. The space content is one way to avoid an Opera bug when the
+*    `contenteditable` attribute is included anywhere else in the document.
+*    Otherwise it causes space to appear at the top and bottom of elements
+*    that receive the `clearfix` class.
+* 2. The use of `table` rather than `block` is only necessary if using
+*    `:before` to contain the top-margins of child elements.
+*/
+.clearfix:before,.clearfix:after {
+	content:" ";
+	/* 1 */
+	display:table
+	/* 2 */
+}
+
+.clearfix:after {
+	clear:both
+}
+
+/*
+* For IE 6/7 only
+* Include this rule to trigger hasLayout and contain floats.
+*/
+.clearfix {
+	*zoom:1
+}
+
+html {
+	display:table;
+	height:100%;
+	width:100%
+}
+
+body {
+	display:table-cell;
+	vertical-align:middle
+}
+
+.maincontentarea {
+	padding-top:25px;
+	padding-bottom:auto;
+	text-align:center;
+	/*padding:20px;
+	padding-left:10px;
+	padding-right:10px*/
+}
+
+.countdown {
+	line-height:1.2em;
+	margin:0 auto;
+	max-width:800px;
+	text-align:center
+}
+
+/* Example 1 */
+.base-swag .countdown {
+	line-height:1.1;
+	padding:15px 0
+}
+
+.base-swag .at-days,.base-swag .at-hours,.base-swag .at-minutes,.base-swag .at-seconds,.base-swag .at-dseconds,.base-swag .at-mseconds {
+	font-family:'Myriad Set Pro','Helvetica','Arial',sans-serif;
+	font-weight:200
+}
+
+.base-swag .at-days-label,.base-swag .at-hours-label,.base-swag .at-minutes-label,.base-swag .at-seconds-label,.base-swag .at-dseconds-label,.base-swag .at-mseconds-label {
+	display:block;
+	text-transform:bold;
+	font-weight:10000;
+	font-size:0.5em;
+	font:bold;
+	color:#fff;
+	letter-spacing:0.4em;
+	font-family:'Myriad Set Pro','Helvetica Neue','Helvetica Neue XP','Helvetica','Arial',sans-serif
+}
+
+.base-swag .at-dseconds {
+	display:inline-block;
+	width:150px
+}
+
+.base-swag .at-mseconds {
+	display:inline-block;
+	width:150px
+}
+
+.base-swag .col {
+	display:block;
+	padding-bottom:20px;
+	margin:0 40px;
+}
+
+/*Screen Size Rules*/
+
+@media all and (min-width: 540px) {
+	.base-swag .at-days,.base-swag .at-hours,.base-swag .at-minutes,.base-swag .at-seconds,.base-swag .at-dseconds,.base-swag .at-mseconds {
+		font-size:3.8em;
+			color:#fff;
+			transform:scale(2); /* W3C */
+	-webkit-transform:scale(2); /* Safari and Chrome */
+	-moz-transform:scale(2); /* Firefox */
+	-ms-transform:scale(2); /* IE 9 */
+	-o-transform:scale(2); /* Opera */
+letter-spacing: -2px;
+line-height: 0;
+	}
+
+	.base-swag .col {
+		display:inline-block
+	}
+
+    .logo {
+        background-image: url(/img/logo.png);
+        width: 115px;
+        height: 115px;
+        margin-left: auto;
+        margin-right: auto;
+        background-size: contain;
+    }
+}
+
+@media all and (max-width: 540px) {
+	.base-swag .at-days,.base-swag .at-hours,.base-swag .at-minutes,.base-swag .at-seconds,.base-swag .at-dseconds,.base-swag .at-mseconds {
+		font-size:2.4em;
+			color:#fff;
+	}
+
+	.base-swag .col {
+		display:inline-block
+	}
+
+    .logo {
+        background-image: url(/img/logo.png);
+        width: 75px;
+        height: 75px;
+        margin-left: auto;
+        margin-right: auto;
+        background-size: contain;
+    }
+}
+
+/*End of Screen Size Rules*/
+
+a:link,a:active,a:hover,a:visited {
+	color:#000
+}
+
+a:link,a:active,a:visited {
+	text-decoration:none;
+	transition:all .1s linear
+}
+
+a:hover {
+	text-decoration:none;
+	transition:all .1s linear;
+	color:#afafaf
+}
+
+#button7 {
+	visibility:visible;
+	display:inline-block;
+	position:relative;
+	left:0;
+	right:0;
+	margin:0 auto;
+	margin-bottom:1em;
+	border-radius:.4em;
+	font-size:25px;
+	cursor:pointer;
+	top:1em;
+	background-color:rgba(255,255,255,.10);
+	padding:.35em 1.1em;
+	transition:all .2s;
+	-webkit-transition:all .2s;
+	-moz-transition:all .2s;
+	-ms-transition:all .2s;
+	color:#fff;
+	border:1px solid #fff;
+	text-decoration:none
+}
+
+#button7:hover {
+	background-color:#fff;
+	color:#000;
+	border-radius:.6em
+}
+
+
+#buttongray {
+	visibility:visible;
+	display:inline-block;
+	position:relative;
+	left:0;
+	right:0;
+	margin:0 auto;
+	margin-bottom:1em;
+	border-radius:.4em;
+	font-size:25px;
+	cursor:pointer;
+	top:1em;
+	background-color:rgba(128, 128, 128, 0.51);
+	padding:.35em 1.1em;
+	transition:all .2s;
+	-webkit-transition:all .2s;
+	-moz-transition:all .2s;
+	-ms-transition:all .2s;
+	color:#aaaaaa;
+	border:1px solid #aaaaaa;
+	text-decoration:none
+}
+
+#buttongray:hover {
+	background-color:#8e8e8e;
+	color:#000;
+	border-radius:.6em;
+    border:1px solid #aaaaaa;
+}
+.prettybird {
+	width:800px;
+	margin:auto
+}
+
+.sponsorama {
+	width:480px;
+	margin:auto
+}
+
+.floatLeft {
+	float:left
+}
+
+.floatRight {
+	float:right
+}
+
+.fancyStuff {
+	visibility:visible;
+	display:inline-block;
+	position:relative;
+	left:0;
+	right:0;
+	margin:0 auto;
+	margin-bottom:1em;
+	border-radius:.4em;
+	font-size:25px;
+	cursor:pointer;
+	top:1em;
+	padding:.4em 1.5em;
+	transition:all .2s;
+	-webkit-transition:all .2s;
+	-moz-transition:all .2s;
+	-ms-transition:all .2s;
+	color:#000;
+	border:1px solid #fff;
+	text-decoration:none
+}
+
+.fancystuff:hover {
+	background-color:#fff;
+	cursor:text
+}
+
+.:hover {
+	background-color:#fff;
+	cursor:pointer;
+	border-radius:.8em
+}
+
+.containMe {
+	width:800px;
+	margin:auto
+}
+
+.fancyStuffsend {
+	visibility:visible;
+	display:inline-block;
+	position:relative;
+	left:0;
+	right:0;
+	margin:0 auto;
+	margin-bottom:1em;
+	border-radius:.4em;
+	font-size:25px;
+	cursor:pointer;
+	top:1em;
+	padding:.4em 1.5em;
+	transition:all .2s;
+	-webkit-transition:all .2s;
+	-moz-transition:all .2s;
+	-ms-transition:all .2s;
+	color:#fff;
+	border:1px solid #fff;
+	text-decoration:none
+}
+
+.fancystuffsend:hover {
+	background-color:#fff;
+	color:#000;
+	border-radius:.8em
+}
+
+.cloakingDevice {
+	/* make the form buttons transparent you dolt */
+	/* then remove this stuff */
+	background-color:#fff;
+	color:#999
+}
+
+
+#buttonorder {
+	visibility:visible;
+	display:inline-block;
+	position:relative;
+	left:0;
+	right:0;
+	margin:0 auto;
+	margin-bottom:1.5em;
+	border-radius:.4em;
+	font-size:25px;
+	background-color:rgba(255,255,255,0.10);
+	cursor:pointer;
+	top:0;
+	padding:.4em 1.5em;
+	transition:all .2s;
+	-webkit-transition:all .2s;
+	-moz-transition:all .2s;
+	-ms-transition:all .2s;
+	color:#fff;
+	border:1px solid #fff;
+	text-decoration:none
+}
+
+#buttonorder:hover {
+	background-color:#fff;
+	color:#000;
+	border-radius:.6em
+}
+
+
+#at-countdown .at-col {
+	display: inline-block;
+	margin: 16px 40px 16px 40px;
+	/*top, right, bottom,left*/
+
+	padding-bottom: 0px;
+}
+
+.at-countdown{
+	display: inline-block;
+	margin: 30px 100px 0px 100px;
+	/*top, right, bottom,left*/
+
+	padding-bottom: 0px;
+}

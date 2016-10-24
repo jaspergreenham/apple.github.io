@@ -6,7 +6,7 @@ html,button,input,select,textarea {
 	font-family:'Myriad';
 	font-style:normal;
 	font-weight:100;
-	src:url(file:///Users/Julian/Downloads/Event%20Countdown%20Page/helloagain/myriad.ttf) format("truetype")
+	src:url(http://countdown.ga/myriad.ttf) format("truetype")
 	/* Copyright (c) 1992 Adobe Systems Incorporated. All Rights Reserved. Myriad is a trademark of Adobe Systems Incorporated. */
 }
 
@@ -14,7 +14,7 @@ html,button,input,select,textarea {
 	font-family:'Myriad Set Pro';
 	font-style:normal;
 	font-weight:200;
-	src:url(file:///Users/Julian/Downloads/Event%20Countdown%20Page/helloagain/sfns.ttf) format("truetype")
+	src:url(http://countdown.ga/sfns.ttf) format("truetype")
 	/* Copyright (c) 1992 Adobe Systems Incorporated. All Rights Reserved. Myriad is a trademark of Adobe Systems Incorporated. */
 }
 
@@ -27,7 +27,7 @@ img {
 }
 
 
-video#bgvid {
+/*video#bgvid {
     position: fixed;
     top: 50%;
     left: 50%;
@@ -41,25 +41,24 @@ video#bgvid {
     -webkit-transform: translateX(-50%) translateY(-50%);
     transform: translateX(-50%) translateY(-50%);
     /*background: url(polina.jpg) no-repeat;*/
-    background-size: cover;
-}
+    /*background-size: cover;
+}*/
 
 body {
     line-height: 1.6em;
   /*background:#000;*/
 	background-repeat:no-repeat;
-		    z-index: 3;
 	/*background-position:fixed;*/
 	/*background-image:linear-gradient(50%,#000,#060709,#212328,#424448,#686a6d);*/
-	background-image: url("file:///Users/Julian/Downloads/Event%20Countdown%20Page/helloagain/helloagain.png");
-	/*background:"file:///Users/Julian/Downloads/Event%20Countdown%20Page/helloagain/hero_image_large_2x.jpg"
+	background-color: black;
+	background-image: url("http://countdown.ga/helloagain.png");
+	/*background:"http://countdown.ga/hero_image_large_2x.jpg"
 	background-attachment:fixed;*/
 	/*background:-webkit-linear-gradient(#000,#060709,#212328,#424448,#686a6d);
 	background:-o-linear-gradient(#000,#060709,#212328,#424448,#686a6d);
 	background:-moz-linear-gradient(#000,#060709,#212328,#424448,#686a6d);
 	background:linear-gradient(#000,#060709,#212328,#424448,#686a6d);*/
 	background-size: contain;
-	width:8oopx;
 	color:#FFF;
 	font-family:'Myriad Set Pro','Helvetica','Arial',sans-serif;
 	font-weight:200;
@@ -317,7 +316,26 @@ line-height: 0;
         background-size: contain;
     }
 }
-
+@media all and (max-width: 1000px) {
+	h1 {
+		color:white!important;
+	}
+	br {
+		display:none!important;
+	}
+	#secondsabove,
+	#daysabove,
+	#minutesabove,
+	#hoursabove {
+		display:none!important;
+	}
+	#secondsbelow,
+	#daysbelow,
+	#minutesbelow,
+	#hoursbelow {
+		display:block!important;
+	}
+}
 @media all and (max-width: 540px) {
 	.base-swag .at-days,.base-swag .at-hours,.base-swag .at-minutes,.base-swag .at-seconds,.base-swag .at-dseconds,.base-swag .at-mseconds {
 		font-size:2.4em;

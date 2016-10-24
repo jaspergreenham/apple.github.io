@@ -4,7 +4,6 @@
 <html>
 
 <head class="test">
-    <meta name="google-translate-customization" content="eafad8eba9ef29c-3343a4aba0c57573-gf6122eff8270bd4f-12"></meta>
     <meta name="apple-mobile-web-app-capable" content="yes" />
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="viewport" content="initial-scale=1.0">
@@ -12,32 +11,30 @@
     <meta name="viewport" content="user-scalable=no">
     <meta name="viewport" content="width=device-width">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0" />
-    <meta property="og:site_name" content="AppleTimer" />
-    <meta property="og:description" content="A beautiful countdown to track the days, hours, minutes, and seconds remaining until the next Apple event or product release! A creation brought to you by Efrain Ayllon Roa, Nick Pomes, and Timothy Reavis." />
-    <meta property="og:image" content="../img/AppleTimerFacebook.jpg" />
+    <meta property="og:site_name" content="Apple Event Countdown" />
+    <meta property="og:description" content="An apple event countdown, changed every apple event to reflect the themed invitation of the upcoming event." />
     <meta name="apple-mobile-web-app-status-bar-style" content="black">
-    <link rel="shortcut icon" href="file:///Users/Julian/Downloads/Event%20Countdown%20Page/helloagain/favicon.ico" />
-    <link rel="apple-touch-icon" href="file:///Users/Julian/Downloads/Event%20Countdown%20Page/helloagain/favicon.png" />
-    <link rel="mask-icon" href="file:///Users/Julian/Downloads/Event%20Countdown%20Page/helloagain/favicon.png" color="#000000">
+    <link rel="shortcut icon" href="http://countdown.ga/favicon.ico" />
+    <link rel="apple-touch-icon" href="http://countdown.ga/favicon.png" />
+    <link rel="mask-icon" href="http://countdown.ga/favicon.png" color="#000000">
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="A beautiful countdown to track the days, hours, minutes, and seconds remaining until the next Apple event or product release! A creation brought to you by Efrain Ayllon Roa, Nick Pomes, and Timothy Reavis.">
-    <meta name="keywords" content="apple,iphone,ipad,countdown,wwdc,appletimer,applecountdown,new iphone,how many days are left until the iphone 6 comes out,nick pomes,efrain roa,timothy reavis,wwdctimer,keynote,event,announcement">
+    <meta name="description" content="An apple event countdown, changed every apple event to reflect the themed invitation of the upcoming event.">
+    <meta name="keywords" content="apple,iphone,ipad,countdown,wwdc,helloagain,hello,again,applecountdown,new iphone,days,days left,apple event,days left until the apple event,countdown,next apple,next apple event,hello,again,october,2016,2017,iphone 7,iphone 8,macbook pro,mac,september,june,march,2015,upcoming,keynote,event,announcement,by apple">
     <meta name="viewport" content="user-scalable=no, width=device-width">
 
-    <title>#AppleSpecialEvent on 21/3: Let us loop you in</title>
+    <title>hello again</title>
 
 
     <!-- Load stylesheet -->
-    <link rel="stylesheet" href="file:///Users/Julian/Downloads/Event%20Countdown%20Page/helloagain/mbg.css">
-    <link rel="stylesheet" href="file:///Users/Julian/Downloads/Event%20Countdown%20Page/helloagain/main.css">
-    <link rel="stylesheet" href="file:///Users/Julian/Downloads/Event%20Countdown%20Page/helloagain/normalize.css">
-<link rel="stylesheet" href="/events.built.css" type="text/css">
+    <link rel="stylesheet" href="http://countdown.ga/mbg.css">
+    <link rel="stylesheet" href="http://countdown.ga/main.css">
+    <link rel="stylesheet" href="http://countdown.ga/normalize.css">
 
-<video autoplay mute id="bgvid" poster="file:///Users/Julian/Downloads/Event%20Countdown%20Page/helloagain/helloagain.png">
-    <source src="file:///Users/Juliasn/Downloads/Event%20Countdown%20Page/helloagain/helloagain.mp4" poster="file:///Users/Julian/Downloads/Event%20Countdown%20Page/helloagain/helloagain.png" type="video/mp4">
-</video>
+<!--<video autoplay mute id="bgvid" poster="http://countdown.ga/helloagain.png">
+    <source src="http://countdown.ga/helloagain.mp4" poster="http://countdown.ga/helloagain.png" type="video/mp4">
+</video>-->
 <script>
 var vid = document.getElementById("bgvid");
       vid.muted = true;
@@ -62,21 +59,21 @@ var vid = document.getElementById("bgvid");
         <!-- Main Div-->
 
         <!-- DO NOT TOUCH. STUFF WILL GO BROKE. -->
-      <br /><br /><br /><!--less line breaks <br /><br /><br />-->
+      <br style="display:block!important;"/><br style="display:block!important;"/><br style="display:block!important;"/><!--less line breaks <br /><br /><br />-->
         <div class="at-countdown" id="at-countdown">
-                         <h1 style="font-size:2.40em">hello again.</h1><!--<img src="file:///Users/Julian/Downloads/Event%20Countdown%20Page/helloagain/againhello.jpg></img>--><br /><br /><br /><br /><br /><br /><br /><br /><!--<h1 class="headline">Let us loop you in.</h1>--><div class="at-col col1"><span class="at-days-label"></span><br /><span class="at-days"></span>
+                         <h1 style="font-size:2.40em">hello again.</h1><!--<img src="http://countdown.ga/againhello.jpg></img>--><br /><br /><br /><br /><br /><!--<h1 class="headline">Let us loop you in.</h1>--><div class="at-col col1"><span class="at-days-label" id="daysabove"></span><br /><span class="at-days"></span><span id="daysbelow" style="display:none" class="at-days-label"></span>
             </div>
-            <div class="at-col col2"><span class="at-hours-label"></span><br /><span class="at-hours"></span>
+            <div class="at-col col2"><span class="at-hours-label" id="hoursabove"></span><br /><span class="at-hours"></span><span id="hoursbelow" style="display:none" class="at-hours-label"></span>
             </div>
-            <div class="at-col col3"><span class="at-minutes-label"></span><br /><span class="at-minutes"></span>
+            <div class="at-col col3"><span class="at-minutes-label" id="minutesabove"></span><br /><span class="at-minutes"></span><span id="minutesbelow" style="display:none" class="at-minutes-label"></span>
             </div>
-            <div class="at-col col4"> <span class="at-seconds-label"></span><br /><span class="at-seconds"></span>
+            <div class="at-col col4"> <span class="at-seconds-label" id="secondsabove"></span><br /><span class="at-seconds"></span><span id="secondsbelow" style="display:none" class="at-seconds-label"></span>
             </div>
-        </div><br /><br />
+        </div><br />
 
         <!-- JavaScript -->
-        <script src="file:///Users/Julian/Downloads/Event%20Countdown%20Page/helloagain/jquery-1.11.2.min.js"></script>
-        <script src="file:///Users/Julian/Downloads/Event%20Countdown%20Page/helloagain/jquery.appletimer.js"></script>
+        <script src="http://countdown.ga/jquery-1.11.2.min.js"></script>
+        <script src="http://countdown.ga/jquery.appletimer.js"></script>
         <!-- <script src="js/jquery.appletimer.min.js"></script> -->
 
         <!-- Init Countdown plugin -->
@@ -113,7 +110,7 @@ var vid = document.getElementById("bgvid");
                         if (nMinutes == 0) {          
                             $(".col3").hide();          
                             if (nSeconds == 0) {            
-                              var url = "http://apple.com/apple-events/march-2016";
+                              var url = "http://apple.com/apple-events/october-2016";
 /*if(typeof IE_fix != "undefined") // IE8 and lower fix to pass the http referer
 {
   document.write("redirecting..."); // Don't remove this line or appendChild() will fail because it is called before document.onload to make the redirect as fast as possible. Nobody will see this text, it is only a tech fix.
@@ -132,14 +129,14 @@ else { window.location.replace(url); } */// All other browsers    
             })
         </script>
         <div>
-            <!-- Date/Link
-            <a href="http://www.apple.com/apple-events/march-2016/" target="_blank"><h1>March 21st, 2016</h1></a>
-            <h6>Apple Watch 2 • iPhone 5se • iPad Air 3</h6>
-            <a href="/"><img src="../img/info.svg" width="33px" vspace="10px" alt="Click here to return.">
+            <!-- Date/Link-->
+          <a href="https://discordapp.com/invite/GaCKBP9" target="_blank"><h6>Join the chat on Discord.</h6></a>
+          <!--  <h6>Apple Watch 2 • iPhone 5se • iPad Air 3</h6>
+            <a href="/"><img src="../img/info.svg" width="33px" vspace="10px" alt="Click here to return.">-->
             </a>
             </center>
-        </div>
-        End of Date/Link -->
+        </div><br style="display:block!important;"/><br /><br /><br /><br /><br /><br /><br /><br />
+      <!--  End of Date/Link -->
 
     </div>
     <!-- Main Div -->
