@@ -153,51 +153,51 @@
 			 * This is the unit label inside "daysLabelWrapper". If "singularLabels" is enabled and the remaining days
 			 * are greater than 1 (one), this label is used.
 			 */
-			daysLabel: 'DAYS',
+			daysLabel: 'var daysleft = 	',
 
 			/**
 			 * Same as above, but this label is used if "singularLabels" is enabled and the value of the remaining days
 			 * is 1 (one). Set it to null, if you want to use the "daysLabel" always or use "singularLabels" instead.
 			 */
-			dayLabel: 'DAY',
+			dayLabel: ' var daysleft = ',
 
 			/**
 			 * This is the unit label inside "hoursLabelWrapper". If "singularLabels" is enabled and the remaining hours
 			 * are greater than 1 (one), this label is used.
 			 */
-			hoursLabel: 'HOURS',
+			hoursLabel: 'var hoursleft = ',
 
 			/**
 			 * Same as above, but this label is used if "singularLabels" is enabled and the value of the remaining hours
 			 * is 1 (one). Set it to null, if you want to use the "hoursLabel" always or use "singularLabels" instead.
 			 */
-			hourLabel: 'HOUR',
+			hourLabel: 'var hoursleft = ',
 
 			/**
 			 * This is the unit label inside "minutesLabelWrapper". If "singularLabels" is enabled and the remaining
 			 * minutes are greater than 1 (one), this label is used.
 			 */
-			minutesLabel: 'MINUTES',
+			minutesLabel: 'var minutesleft = ',
 
 			/**
 			 * Same as above, but this label is used if "singularLabels" is enabled and the value of the remaining
 			 * minutes is 1 (one). Set it to null, if you want to use the "minutesLabel" always or use "singularLabels"
 			 * instead.
 			 */
-			minuteLabel: 'MINUTE',
+			minuteLabel: 'var minutesleft = ',
 
 			/**
 			 * This is the unit label inside "secondsLabelWrapper". If "singularLabels" is enabled and the remaining
 			 * seconds are greater than 1 (one), this label is used.
 			 */
-			secondsLabel: 'SECONDS',
+			secondsLabel: 'var secondsleft = ',
 
 			/**
 			 * Same as above, but this label is used if "singularLabels" is enabled and the value of the remaining
 			 * seconds is 1 (one). Set it to null, if you want to use the "secondsLabel" always or use "singularLabels"
 			 * instead.
 			 */
-			secondLabel: 'SECOND',
+			secondLabel: 'var secondsleft = ',
 
 			/**
 			 * This is the unit label inside "decisecondsLabelWrapper". If "singularLabels" is enabled and the remaining
@@ -244,7 +244,7 @@
 			 * Use this option to force left-hand zeros. Every value will have two digits unless there are more digits
 			 * necessary to display the remaining time (e.g. days and milliseconds).
 			 */
-			leftHandZeros: false,
+			leftHandZeros: true,
 
 			/**
 			 * Wrap each digit with a tag to customize it individual.
