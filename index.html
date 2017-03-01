@@ -14,9 +14,9 @@
     <meta property="og:site_name" content="Apple Event Countdown" />
     <meta property="og:description" content="An apple event countdown, changed every apple event to reflect the themed invitation of the upcoming event." />
     <meta name="apple-mobile-web-app-status-bar-style" content="black">
-    <link rel="shortcut icon" href="http://countdown.ga/favicon.ico" />
-    <link rel="apple-touch-icon" href="http://countdown.ga/favicon.png" />
-    <link rel="mask-icon" href="http://countdown.ga/favicon.png" color="#000000">
+    <link rel="shortcut icon" href="/countdown16/favicon.ico" />
+    <link rel="apple-touch-icon" href="/countdown16/favicon.png" />
+    <link rel="mask-icon" href="/countdown16/favicon.png" color="#000000">
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -31,8 +31,8 @@
     <link rel="stylesheet" href="/countdown16/mbg.css">
     <link rel="stylesheet" href="/countdown16/main.css">
     <link rel="stylesheet" href="/countdown16/normalize.css">
-    <script src="https://use.fontawesome.com/1882dcaa13.js"></script>
-
+    <!--<script src="https://use.fontawesome.com/1882dcaa13.js"></script>
+-->
 <!--<video autoplay mute id="bgvid" poster="http://countdown.ga/helloagain.png">
     <source src="http://countdown.ga/helloagain.mp4" poster="http://countdown.ga/helloagain.png" type="video/mp4">
 </video>-->
@@ -60,16 +60,27 @@ var vid = document.getElementById("bgvid");
         <!-- Main Div-->
 
         <!-- DO NOT TOUCH. STUFF WILL GO BROKE. -->
-      <br style="display:block!important;"/><br style="display:block!important;"/><br style="display:block!important;"/><!--less line breaks <br /><br /><br />-->
-        <div class="at-countdown" id="at-countdown">
-                         <h1 style="font-size:2.40em">hello again.</h1><!--<img src="http://countdown.ga/againhello.jpg></img>--><br /><br /><br /><br /><br /><!--<h1 class="headline">Let us loop you in.</h1>--><div class="at-col col1"><span class="at-days-label" id="daysabove"></span><br /><span class="at-days"></span><span id="daysbelow" style="display:none" class="at-days-label"></span>
+      <!--<br style="display:block!important;"/><br style="display:block!important;"/><br style="display:block!important;"/>--><!--less line breaks <br /><br /><br />-->
+       
+
+
+
+
+
+
+
+
+<div class="at-countdown" id="at-countdown">
+                         <!--<h1 style="font-size:2.40em">hello again.</h1>--><!--<img src="file:///Users/Julian/Downloads/Downloads/Event%20Countdown%20Page/WWDC17/againhello.jpg></img>--><!--<h1 class="headline">Let us loop you in.</h1>-->
+            <div class="at-col col5"><span class="at-months-label"></span><br /><span class="at-months"></span>
+</div>
+            <div class="at-col col4"><span class="at-days-label" id="daysabove"></span><br/><span class="at-days"></span>
             </div>
-            <div class="at-col col2"><span class="at-hours-label" id="hoursabove"></span><br /><span class="at-hours"></span><span id="hoursbelow" style="display:none" class="at-hours-label"></span>
+            <div class="at-col col2"><span class="at-hours-label" id="hoursabove"></span><br /><span class="at-hours"></span>
             </div>
-            <div class="at-col col3"><span class="at-minutes-label" id="minutesabove"></span><br /><span class="at-minutes"></span><span id="minutesbelow" style="display:none" class="at-minutes-label"></span>
+            <div class="at-col col3"><span class="at-minutes-label" id="minutesabove"></span><br /><span class="at-minutes"></span>
             </div>
-            <div class="at-col col4"> <span class="at-seconds-label" id="secondsabove"></span><br /><span class="at-seconds"></span><span id="secondsbelow" style="display:none" class="at-seconds-label"></span>
-            </div>
+            <div class="at-col col1" style="display:none"> <span class="at-seconds-label" id="secondsabove"></span><br /><span class="at-seconds"></span>
         </div><br />
 
         <!-- JavaScript -->
@@ -84,59 +95,72 @@ var vid = document.getElementById("bgvid");
                     //Change date here!
                     hour: 10,
                     day: 27,
-                    month: 10,
-                    year: 2016,
+                    month: 6,
+                    year: 2017,
                     pluralLabels: true
                 });
             });
         </script>
         <script>
             $(document).ready(function () {    
+                var tMonths = $(".at-months-digit").text();    
                 var tDays = $(".at-days-digit").text();    
                 var tHours = $(".at-hours-digit").text();    
                 var tMinutes = $(".at-minutes-digit").text();    
                 var tSeconds = $(".at-seconds-digit").text();
 
-                    
+                 
+                nMonths = parseInt(tMonths);       
                 nDays = parseInt(tDays);    
                 nHours = parseInt(tHours);    
                 nMinutes = parseInt(tMinutes);    
                 nSeconds = parseInt(tSeconds);
-
                     
-                if (nDays == 0) {      
-                    $(".col1").hide();      
-                    if (nHours == 0) {        
-                        $(".col2").hide();        
-                        if (nMinutes == 0) {          
-                            $(".col3").hide();          
-                            if (nSeconds == 0) {            
-                              var url = "http://apple.com/apple-events/october-2016";
-/*if(typeof IE_fix != "undefined") // IE8 and lower fix to pass the http referer
-{
-  document.write("redirecting..."); // Don't remove this line or appendChild() will fail because it is called before document.onload to make the redirect as fast as possible. Nobody will see this text, it is only a tech fix.
-  var referLink = document.createElement("a");
-  referLink.href = url;
-  document.body.appendChild(referLink);
-  referLink.click();
-}
-else { window.location.replace(url); } */// All other browsers    
-                            }        
-                        }      
-                    }    
-                }
-
-                  
+                if (nMonths == 0) {      
+		$(".col5").hide();  
+		//var vid = document.getElementById("bgvvid"); 
+		//var body = document.getElementById("main"); 
+		//vid.play();
+		$(".col1").show();  
+		//main.background = "#ffff00!important";
+		//vid.innerHTML = style="display:block";
+			if (nDays == 0) {      
+				$(".col4").hide();  
+					if (nHours == 0) {        
+						$(".col2").hide();  
+							if (nMinutes == 15) {           
+								//$(".col3").hide();
+									if (nSeconds < 25) {          
+                                    						var vid = document.getElementById("bgvvid"); 
+                                   						//var body = document.getElementById("main"); 
+                                    						vid.play();                   
+                                      									if (nMinutes == 9) {            
+                                                  								var url = "http://developer.apple.com/wwdc/live";
+                                                  								if(typeof IE_fix != "undefined") // IE8 and lower fix to pass the http referer
+                                                  								{
+                                                    									document.write("redirecting..."); // Don't remove this line or appendChild() will fail because it is called before document.onload to make the redirect as fast as possible. Only tech fix, not visible.
+                                                    									var referLink = document.createElement("a");
+                                                    									referLink.href = url;
+                                                    									document.body.appendChild(referLink);
+                                                    									referLink.click();
+                                                  								}
+                                                 								else { window.location.replace(url); } // All other browsers    
+													}
+									}
+							}        
+					}      
+			}    
+	}                  
             })
-        </script>
+        </script><br /><br /><br /><!--<br /><br /><br /><br /><br /><br /><br /><br /><br />-->
         <div>
             <!-- Date/Link-->
-          <a href="https://discord.gg/x8jsHJM" target="_blank"><i class="fa fa-commenting" aria-hidden="true"></i><h6 style="inline-block">Join the chat on Discord.</h6></a>
+          <a href="https://discord.gg/x8jsHJM" target="_blank" class="h6copy" id="h6copy"><i class="fa fa-commenting" aria-hidden="true"></i>Join the chat on Discord.</a>
           <!--  <h6>Apple Watch 2 • iPhone 5se • iPad Air 3</h6>
             <a href="/"><img src="../img/info.svg" width="33px" vspace="10px" alt="Click here to return.">-->
             </a>
             </center>
-        </div><br style="display:block!important;"/><br /><br /><br /><br /><br /><br /><br /><br />
+        </div><br style="display:block!important;"/><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
       <!--  End of Date/Link -->
 
     </div>
