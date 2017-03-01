@@ -1,3 +1,15 @@
+/*
+<!-- <div class="at-countdown" id="at-countdown">
+                         <h1 style="font-size:2.40em">hello again.</h1><!--<img src="http://countdown.ga/againhello.jpg></img>--><br /><br /><br /><br /><br /><!--<h1 class="headline">Let us loop you in.</h1>--><div class="at-col col1"><span class="at-days-label" id="daysabove"></span><br /><span class="at-days"></span><span id="daysbelow" style="display:none" class="at-days-label"></span>
+            </div>
+            <div class="at-col col2"><span class="at-hours-label" id="hoursabove"></span><br /><span class="at-hours"></span><span id="hoursbelow" style="display:none" class="at-hours-label"></span>
+            </div>
+            <div class="at-col col3"><span class="at-minutes-label" id="minutesabove"></span><br /><span class="at-minutes"></span><span id="minutesbelow" style="display:none" class="at-minutes-label"></span>
+            </div>
+            <div class="at-col col4"> <span class="at-seconds-label" id="secondsabove"></span><br /><span class="at-seconds"></span><span id="secondsbelow" style="display:none" class="at-seconds-label"></span>
+            </div>-->
+*/
+
 html,button,input,select,textarea {
 	color:#FFF
 }
@@ -50,7 +62,7 @@ body {
 	background-repeat:no-repeat;
 	/*background-position:fixed;*/
 	/*background-image:linear-gradient(50%,#000,#060709,#212328,#424448,#686a6d);*/
-	background-color: black;
+	background-color: white;
 	background-image: url("/countdown16/17.png");
 	/*background:"http://countdown.ga/hero_image_large_2x.jpg"
 	background-attachment:fixed;*/
@@ -126,7 +138,30 @@ h5 {
 	margin-bottom:25px;
 	color:#e3e3e3
 }
-h6 {
+.h6copy,
+#h6copy {
+display:inline-block;
+  width: 30%;
+		//    z-index: 11;
+  padding: .4rem;
+  border: none;
+  margin-left: 1rem;
+  font-size: 1.3rem;
+  background: rgba(0,0,0,0.1);
+  color: rgba(0,0,0,1);
+  border-radius: 3px;
+  cursor: pointer;
+  transition: .3s background;
+}
+
+.h6copy:hover,
+#h6copy:hover {
+   background: rgba(0,0,0,0.23)!important;
+  color: rgba(0,0,0,1);
+}
+h6,
+.h6copy,
+#h6copy {
 	font-size:20px;
 	font-family:'Myriad Set Pro','Helvetica','Arial',sans-serif;
 	font-weight:200;
@@ -135,7 +170,7 @@ h6 {
 	text-decoration:none;
 	margin-top:5px;
 	margin-bottom:0;
-	color:#b2b2b2
+	//color:#b2b2b2
 }
 
 .logo {
@@ -253,13 +288,13 @@ body {
 	padding:15px 0
 }
 
-.base-swag .at-days,.base-swag .at-hours,.base-swag .at-minutes,.base-swag .at-seconds,.base-swag .at-dseconds,.base-swag .at-mseconds {
+.base-swag .at-days,.base-swag .at-hours,.base-swag .at-months,.base-swag .at-minutes,.base-swag .at-seconds,.base-swag .at-dseconds,.base-swag .at-mseconds {
 	font-family:,'Helvetica Neue','Myriad Set Pro','Helvetica Neue XP','Helvetica','Arial',sans-serif !important;
 font-weight: 1!important;
 font-style: Thin;
 }
 
-.base-swag .at-days-label,.base-swag .at-hours-label,.base-swag .at-minutes-label,.base-swag .at-seconds-label,.base-swag .at-dseconds-label,.base-swag .at-mseconds-label {
+.base-swag .at-days-label,.base-swag .at-hours-label,.base-swag .at-months-label,.base-swag .at-minutes-label,.base-swag .at-seconds-label,.base-swag .at-dseconds-label,.base-swag .at-mseconds-label {
 	display:block;
 	text-transform:light;
 	font-weight:10000;
@@ -291,7 +326,7 @@ font-style: Thin;
 /*Screen Size Rules*/
 
 @media all and (min-width: 540px) {
-	.base-swag .at-days,.base-swag .at-hours,.base-swag .at-minutes,.base-swag .at-seconds,.base-swag .at-dseconds,.base-swag .at-mseconds {
+	.base-swag .at-days,.base-swag .at-months,.base-swag .at-hours,.base-swag .at-minutes,.base-swag .at-seconds,.base-swag .at-dseconds,.base-swag .at-mseconds {
 		font-size:3.8em;
 			color:#fff;
 			transform:scale(2); /* W3C */
@@ -316,32 +351,56 @@ line-height: 0;
         background-size: contain;
     }
 }
+@media all and (max-width: 1200px) {
+body {
+	background-size: cover!important;
+background-image: url("/countdown16/171.png")!important;
+}
+}
 @media all and (max-width: 1000px) {
+body {
+	background-size: cover!important;
+}
 	h1 {
 		color:white!important;
+}
+	.at-days-label,.at-days,.at-months,.at-months-label,.at-hours,.at-hours-label,.at-minutes,.at-minutes-label {
+		color:black!important;
 	}
+.h6copy,
+#h6copy {
+  width: 100%!important;
+}
 	br {
 		display:none!important;
 	}
-	#secondsabove,
+	/*#secondsabove,
 	#daysabove,
 	#minutesabove,
-	#hoursabove {
+	#hoursabove,
+#monthsabove {
 		display:none!important;
 	}
 	#secondsbelow,
 	#daysbelow,
 	#minutesbelow,
-	#hoursbelow {
+	#hoursbelow,
+#monthsbelow {
 		display:block!important;
-	}
+	}*/
 }
 @media all and (max-width: 540px) {
-	.base-swag .at-days,.base-swag .at-hours,.base-swag .at-minutes,.base-swag .at-seconds,.base-swag .at-dseconds,.base-swag .at-mseconds {
+	.base-swag .at-days,.base-swag .at-months,.base-swag .at-hours,.base-swag .at-months,.base-swag .at-minutes,.base-swag .at-seconds,.base-swag .at-dseconds,.base-swag .at-mseconds {
 		font-size:2.4em;
 			color:#fff;
 	}
-
+body {
+	background-size: cover!important;
+}
+.h6copy,
+#h6copy {
+  width: 140%!important;
+}
 	.base-swag .col {
 		display:inline-block
 	}
